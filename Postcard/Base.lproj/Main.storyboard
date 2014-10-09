@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ouY-Fm-VvF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ouY-Fm-VvF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -104,6 +104,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jto-Uh-7Xf"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI8-45-kb7">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="163" width="210" height="27"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="LKE-fw-pSq"/>
                                 <exclude reference="8vt-se-2Hd"/>
                                 <exclude reference="wK8-RM-xsY"/>
+                                <exclude reference="ZI8-45-kb7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,13 +132,16 @@
                                 <include reference="LKE-fw-pSq"/>
                                 <include reference="8vt-se-2Hd"/>
                                 <include reference="wK8-RM-xsY"/>
+                                <include reference="ZI8-45-kb7"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="enterMessageTextField" destination="8vt-se-2Hd" id="bjV-3V-k4a"/>
+                        <outlet property="enterMessageTextField" destination="8vt-se-2Hd" id="ZR1-tm-TgI"/>
+                        <outlet property="enterNameTextField" destination="LKE-fw-pSq" id="mED-EP-Y1h"/>
                         <outlet property="mailButton" destination="wK8-RM-xsY" id="twJ-MO-p43"/>
                         <outlet property="messageLabel" destination="eeG-V5-OLd" id="drf-Dv-UG9"/>
+                        <outlet property="nameLabel" destination="ZI8-45-kb7" id="A9B-8f-Sbj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
